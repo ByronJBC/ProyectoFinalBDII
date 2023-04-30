@@ -92,9 +92,25 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientesForm.aspx" />
+    <Content Include="HomeForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientesForm.aspx.designer.vb">
+      <DependentUpon>ClientesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesForm.aspx.vb">
+      <DependentUpon>ClientesForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HomeForm.aspx.designer.vb">
+      <DependentUpon>HomeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.aspx.vb">
+      <DependentUpon>HomeForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
