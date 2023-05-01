@@ -78,3 +78,4 @@ C:\Users\Jeffrey\Dropbox\Universidad\031. Bases de Datos II\Proyecto\ProyectoFin
 C:\Users\Jeffrey\Dropbox\Universidad\031. Bases de Datos II\Proyecto\ProyectoFinalBDII\ProyectoFinal_BDII\obj\Debug\ProyectoFinal_BDII.dll
 C:\Users\Jeffrey\Dropbox\Universidad\031. Bases de Datos II\Proyecto\ProyectoFinalBDII\ProyectoFinal_BDII\obj\Debug\ProyectoFinal_BDII.xml
 C:\Users\Jeffrey\Dropbox\Universidad\031. Bases de Datos II\Proyecto\ProyectoFinalBDII\ProyectoFinal_BDII\obj\Debug\ProyectoFinal_BDII.pdb
+C:\Users\Jeffrey\Dropbox\Universidad\031. Bases de Datos II\Proyecto\ProyectoFinalBDII\ProyectoFinal_BDII\bin\Oracle.ManagedDataAccess.dll

@@ -10,15 +10,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:ScriptManager ID="smPageManager" ScriptMode="Release" runat="server">
-            <Scripts runat="server">
-                <asp:ScriptReference Path="~/Scripts/bootstrap.min.js" />
-            </Scripts>
-        </asp:ScriptManager>
         <table style="width: 100%;">
             <tr>
                 <td>Clientes</td>
                 <td><asp:Button ID="Button1" runat="server" Text="Clientes" OnClick="Button1_Click" class="btn btn-primary"/></td>
+            </tr>
+            <tr>
+                <td>Login</td>
+                <td><asp:Button ID="Button2" runat="server" Text="Login" OnClick="Button2_Click" class="btn btn-primary"/></td>
             </tr>
         </table>
     </form>
