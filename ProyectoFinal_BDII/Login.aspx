@@ -22,16 +22,16 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7">
             <h3>LOGIN <strong>MUEBLES LOS ALPES</strong></h3>
-            <form action="#" method="post">
+            <form action="#" method="post" runat="server">
               <div class="form-group first">
                 <label for="username">USUARIO</label>
-                <input type="text" class="form-control" placeholder="USER123" id="username"/>
+                <asp:TextBox id="txt_UserName" runat="server" class="form-control"  placeholder="USER123"></asp:TextBox>            
               </div>
               <div class="form-group last mb-3">
                 <label for="password">CONTRASEÑA</label>
-                <input type="password" class="form-control" placeholder="******" id="password"/>
+                <asp:TextBox id="txt_Password" runat="server" type="password" class="form-control" placeholder="******"></asp:TextBox>
               </div>
-                <input type="submit" value="INGRESAR" class="btn btn-outline-warning"/>
+                <asp:Button ID="btnLogin" runat="server" Text="INGRESAR" OnClick="btnLogin_Click" class="btn btn-outline-warning"/>
             </form>
           </div>
         </div>
