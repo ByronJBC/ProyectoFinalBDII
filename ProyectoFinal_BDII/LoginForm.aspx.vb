@@ -4,7 +4,6 @@
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
 
-        Limpiar()
     End Sub
 
     Private Sub Limpiar()
@@ -26,7 +25,7 @@
 
     Protected Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Console.Write("Estoy en enviar")
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("INSERT INTO USUARIO(id_usuario,usuario,pass) values (3,'" & txtUsuario.Text & "','" & txtPassword.Text & "')", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("INSERT INTO USUARIO(id_usuario,usuario,pass) values (4,'" & txtUsuario.Text & "','" & txtPassword.Text & "')", Conex)
         cmd.ExecuteNonQuery()
 
         Limpiar()
