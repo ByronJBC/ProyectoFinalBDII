@@ -172,6 +172,7 @@
                     </div>
                 </div>
             </div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#about">Catálogo Completo</a>
         </div>
     </section>
     <!-- About-->
