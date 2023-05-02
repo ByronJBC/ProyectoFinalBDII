@@ -24,7 +24,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li><a href="../Home.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
+                    <li><a href="../HomeAdmin.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
                 </ul>
             </div>
         </div>
@@ -51,8 +51,8 @@
                                     <table class="table table-borderless mb-0">
                                         <thead>
                                             <tr>
-                                                <th scope="col">CLIENTE</th>
-                                                <th scope="col">NIT</th>
+                                                <th scope="col">EMPLEADO</th>
+                                                <th scope="col">CUI</th>
                                                 <th scope="col">TELEFONO</th>
                                                 <th scope="col">EMAIL</th>
                                                 <th scope="col"></th>

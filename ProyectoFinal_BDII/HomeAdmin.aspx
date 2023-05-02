@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Css/stylesAdmin.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -140,126 +140,138 @@
             <a class="btn btn-primary btn-xl text-uppercase" href="#clientes">Inventario General</a>
         </div>
     </section>
-    <!-- Clientes-->
-    <section class="page-section" id="clientes">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Mejores Clientes</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
+    <form runat="server">
+        <!-- Clientes-->
+        <section class="page-section" id="clientes">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Mejores Clientes</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." />
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." />
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." />
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." />
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2020</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>Be Part
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
                                 <br />
-                            Of Our
+                                Of Our
                                 <br />
-                            Story!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Empleados-->
-    <section class="page-section bg-light" id="empleados">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Mejores Empleados</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="empleados-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                        <h4>Parveen Anand</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="empleados-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>Diana Petersen</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="empleados-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row align-items-center justify-content-center float-end">
+                    <asp:Button ID="BtnClientes" runat="server" Text="Ver Todos" class="btn btn-primary btn-xl text-uppercase" OnClick="BtnClientes_Click" />
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </section>
+        <!-- Empleados-->
+        <section class="page-section bg-light" id="empleados">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Mejores Empleados</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="empleados-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Parveen Anand</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="empleados-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="empleados-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    </div>
+                </div>
+            <div class="row align-items-center justify-content-center float-end">
+                <asp:Button ID="BtnEmpleados" runat="server" Text="Ver Todos" class="btn btn-primary btn-xl text-uppercase" OnClick="BtnEmpleados_Click" />
             </div>
-        </div>
-    </section>
-    
+            </div>
+            
+        </section>
+    </form>
     <!-- reportes-->
     <section class="page-section" id="reportes">
         <div class="container">
@@ -271,7 +283,7 @@
                 <button class="btn btn-primary btn-xl text-uppercase disabled" id="reportVentas" type="submit">Reporte de Ventas</button>
                 <button class="btn btn-primary btn-xl text-uppercase disabled" id="reportProductos" type="submit">Reporte de Productos</button>
                 <button class="btn btn-primary btn-xl text-uppercase disabled" id="reportClientes" type="submit">Reporte de Clientes</button>
-            </div>  
+            </div>
         </div>
     </section>
     <!-- Footer-->
@@ -297,7 +309,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -333,7 +346,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -369,7 +383,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -405,7 +420,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -441,7 +457,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -477,7 +494,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -508,14 +526,7 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

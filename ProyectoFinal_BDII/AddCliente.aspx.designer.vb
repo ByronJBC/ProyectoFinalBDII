@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Clientes
+Partial Public Class AddCliente
 End Class

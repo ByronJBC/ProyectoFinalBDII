@@ -53,9 +53,27 @@ ProyectoFinal_BDII
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="F:ProyectoFinal_BDII.Clientes._btnAddCliente">
+<member name="F:ProyectoFinal_BDII.Empleados._btnAddCliente">
 <summary>
 Control btnAddCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.HomeAdmin._BtnClientes">
+<summary>
+Control BtnClientes.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.HomeAdmin._BtnEmpleados">
+<summary>
+Control BtnEmpleados.
 </summary>
 <remarks>
 Campo generado automáticamente.

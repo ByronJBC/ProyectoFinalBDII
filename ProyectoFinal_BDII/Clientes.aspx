@@ -12,6 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <title>Clientes - Muebles los Alpes</title>
+
+
+
+
+
+
 </head>
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -24,23 +30,39 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li><a href="../Home.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
+                    <li><a href="../HomeAdmin.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-section bg-dark " id="clientes">
+    <section class="page-section bg-dark pb-4" id="clientes">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase text-light">Clientes</h2>
-                <form class="float-end" runat="server">
-                    <asp:Button ID="btnAddCliente" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning" />
-                </form>
+            </div>
+            <button type="button" id="BtnAddCliente" class="btn btn-outline-warning float-end" data-toggle="modal" data-target="#myModal">+ AGREGAR NUEVO</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This is a large modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="py-4">
+
+    <section class="py-4" >
         <div class="mask d-flex align-items-center">
             <div class="container">
                 <div class="row justify-content-center">

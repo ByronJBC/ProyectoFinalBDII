@@ -12,4 +12,22 @@ Option Explicit On
 
 
 Partial Public Class HomeAdmin
+
+    '''<summary>
+    '''Control BtnClientes.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnClientes As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control BtnEmpleados.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnEmpleados As Global.System.Web.UI.WebControls.Button
 End Class

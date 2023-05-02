@@ -95,6 +95,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCliente.aspx" />
     <Content Include="Clientes.aspx" />
     <Content Include="Css\stylesAdmin.css" />
     <Content Include="Css\styles.css" />
@@ -115,7 +116,9 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Css\stylesClientes.css" />
+    <Content Include="Css\stylesEmpleados.css" />
     <Content Include="Css\stylesLogin.css" />
+    <Content Include="Empleados.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeAdmin.aspx" />
     <Content Include="HomeForm.aspx" />
@@ -131,6 +134,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCliente.aspx.designer.vb">
+      <DependentUpon>AddCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCliente.aspx.vb">
+      <DependentUpon>AddCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Clientes.aspx.designer.vb">
       <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
@@ -139,6 +149,13 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="Empleados.aspx.designer.vb">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.aspx.vb">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Home.aspx.designer.vb">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
