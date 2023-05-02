@@ -7,6 +7,8 @@ Public Class Login
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
+
+
     End Sub
 
     Private Sub Limpiar()
@@ -38,7 +40,7 @@ Public Class Login
                 Conexion.Conex.Close()
             End If
         Else
-            Console.Write("No existe el usuario")
+            Response.Write("<script language=""javascript"">alert('Usuario o Contraseña Incorrectos!');</script>")
             Limpiar()
             Conexion.Conex.Close()
         End If

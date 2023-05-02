@@ -53,9 +53,9 @@ ProyectoFinal_BDII
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="F:ProyectoFinal_BDII.ClientesForm._form1">
+<member name="F:ProyectoFinal_BDII.Clientes._btnAddCliente">
 <summary>
-Control form1.
+Control btnAddCliente.
 </summary>
 <remarks>
 Campo generado automáticamente.
