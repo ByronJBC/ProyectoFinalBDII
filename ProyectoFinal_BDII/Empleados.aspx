@@ -35,7 +35,7 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase text-light">Empleados</h2>
                 <form class="float-end" runat="server">
-                    <asp:Button ID="btnAddCliente" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning" />
+                    <asp:Button ID="btnAddEmpleado" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning" />
                 </form>
             </div>
         </div>

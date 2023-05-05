@@ -53,9 +53,18 @@ ProyectoFinal_BDII
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="F:ProyectoFinal_BDII.Empleados._btnAddCliente">
+<member name="F:ProyectoFinal_BDII.Clientes._btnAddCliente">
 <summary>
 Control btnAddCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.Empleados._btnAddEmpleado">
+<summary>
+Control btnAddEmpleado.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -126,6 +135,33 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </remarks>
 </member>
 <member name="F:ProyectoFinal_BDII.Login._btnLogin">
+<summary>
+Control btnLogin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.LoginEmpleado._txt_UserName">
+<summary>
+Control txt_UserName.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.LoginEmpleado._txt_Password">
+<summary>
+Control txt_Password.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.LoginEmpleado._btnLogin">
 <summary>
 Control btnLogin.
 </summary>

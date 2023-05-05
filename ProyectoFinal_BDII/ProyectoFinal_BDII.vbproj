@@ -118,13 +118,16 @@
     <Content Include="Css\stylesClientes.css" />
     <Content Include="Css\stylesEmpleados.css" />
     <Content Include="Css\stylesLogin.css" />
+    <Content Include="Css\stylesPrincipal.css" />
     <Content Include="Empleados.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeAdmin.aspx" />
     <Content Include="HomeForm.aspx" />
     <Content Include="Js\scripts.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="LoginCliente.aspx" />
+    <Content Include="LoginEmpleado.aspx" />
     <Content Include="LoginForm.aspx" />
+    <Content Include="Principal.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -177,11 +180,18 @@
       <DependentUpon>HomeForm.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LoginCliente.aspx.designer.vb">
+      <DependentUpon>LoginCliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LoginCliente.aspx.vb">
+      <DependentUpon>LoginCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LoginEmpleado.aspx.designer.vb">
+      <DependentUpon>LoginEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginEmpleado.aspx.vb">
+      <DependentUpon>LoginEmpleado.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="LoginForm.aspx.designer.vb">
@@ -210,6 +220,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
