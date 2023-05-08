@@ -14,6 +14,7 @@
     <title>Clientes - Muebles los Alpes</title>
 </head>
 <body id="page-top">
+    <form runat="server">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
@@ -32,12 +33,22 @@
     <section class="page-section bg-dark " id="clientes">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase text-light">Clientes</h2>
-                <form class="float-end" runat="server">
+                <h2 class="section-heading text-uppercase text-light float-end">Clientes</h2>
                     <asp:Button ID="btnAddCliente" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning" />
-                </form>
+               
             </div>
         </div>
+    </section>
+
+    <section>
+        <asp:GridView ID="GridView1" class="table table-bordered table-condensed table-responsive table-hover " runat="server" AutoGenerateColumns="false">
+            <Columns>
+            <asp:BoundField DataField="Cliente" HeaderText="Cliente" />
+            <asp:BoundField DataField="NIT" HeaderText="NIT" />
+            <asp:BoundField DataField="Telefono" HeaderText="Telefono" />
+            <asp:BoundField DataField="Email" HeaderText="Email" />
+        </Columns>
+    </asp:GridView>
     </section>
 
     <section class="py-4" >
@@ -184,6 +195,7 @@
             </div>
         </div>
     </footer>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

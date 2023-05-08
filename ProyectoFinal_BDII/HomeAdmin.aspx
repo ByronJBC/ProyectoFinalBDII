@@ -14,6 +14,7 @@
     <title>Muebles los Alpes</title>
 </head>
 <body id="page-top">
+    <form runat="server">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
@@ -137,10 +138,12 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#clientes">Inventario General</a>
+            <div class="row align-items-center justify-content-center float-end p-3 m-0">
+                <asp:Button ID="BtnInvGeneral" runat="server" Text="Inventario General" class="btn btn-primary btn-xl text-uppercase" />
+            </div>
         </div>
     </section>
-    <form runat="server">
+   
         <!-- Clientes-->
         <section class="page-section" id="clientes">
             <div class="container">
@@ -271,7 +274,7 @@
             </div>
             
         </section>
-    </form>
+    
     <!-- reportes-->
     <section class="page-section" id="reportes">
         <div class="container">
@@ -526,6 +529,7 @@
             </div>
         </div>
     </div>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
