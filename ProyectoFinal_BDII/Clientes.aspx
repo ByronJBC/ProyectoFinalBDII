@@ -15,186 +15,87 @@
 </head>
 <body id="page-top">
     <form runat="server">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">
-                <img src="assets/img/navbar-logo.png" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                    <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li><a href="../HomeAdmin.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="page-section bg-dark " id="clientes">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase text-light float-end">Clientes</h2>
-                    <asp:Button ID="btnAddCliente" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning" />
-               
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <asp:GridView ID="GridView1" class="table table-bordered table-condensed table-responsive table-hover " runat="server" AutoGenerateColumns="false">
-            <Columns>
-            <asp:BoundField DataField="Cliente" HeaderText="Cliente" />
-            <asp:BoundField DataField="NIT" HeaderText="NIT" />
-            <asp:BoundField DataField="Telefono" HeaderText="Telefono" />
-            <asp:BoundField DataField="Email" HeaderText="Email" />
-        </Columns>
-    </asp:GridView>
-    </section>
-
-    <section class="py-4" >
-        <div class="mask d-flex align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-borderless mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">CLIENTE</th>
-                                                <th scope="col">NIT</th>
-                                                <th scope="col">TELEFONO</th>
-                                                <th scope="col">EMAIL</th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>61</td>
-                                                <td>Edinburgh</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sonya Frost</td>
-                                                <td>Software Engineer</td>
-                                                <td>23</td>
-                                                <td>Edinburgh</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jena Gaines</td>
-                                                <td>Office Manager</td>
-                                                <td>30</td>
-                                                <td>London</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quinn Flynn</td>
-                                                <td>Support Lead</td>
-                                                <td>22</td>
-                                                <td>Edinburgh</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Charde Marshall</td>
-                                                <td>Regional Director</td>
-                                                <td>36</td>
-                                                <td>San Francisco</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Haley Kennedy</td>
-                                                <td>Senior Marketing Designer</td>
-                                                <td>43</td>
-                                                <td>London</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tatyana Fitzpatrick</td>
-                                                <td>Regional Director</td>
-                                                <td>19</td>
-                                                <td>Warsaw</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-info px-3">
-                                                        <i class="fas fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-danger px-3">
-                                                        <i class="fas fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                <a href="HomeAdmin.aspx" class="navbar-brand">
+                    <img src="assets/img/navbar-logo.png" alt="..." /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li><a href="../HomeAdmin.aspx" style="text-decoration: none" class="navbar-text">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section bg-dark " id="clientes">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-light">Clientes</h2>
+                    <asp:Button ID="btnAddCliente" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning float-end" OnClick="btnAddCliente_Click" />
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4">
+            <div class="mask d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <asp:GridView ID="GridViewClientes" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID">
+                                            <Columns>
+                                                <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
+                                                <asp:BoundField DataField="Cliente" HeaderText="CLIENTE" />
+                                                <asp:BoundField DataField="NIT" HeaderText="NIT" />
+                                                <asp:BoundField DataField="Telefono" HeaderText="TELEFONO" />
+                                                <asp:BoundField DataField="Email" HeaderText="EMAIL" />
+                                                <asp:ButtonField ButtonType="Link"
+                                                    ItemStyle-HorizontalAlign="Left"
+                                                    ControlStyle-BorderColor="Transparent"
+                                                    ControlStyle-BackColor="Turquoise"
+                                                    CommandName="EditarCliente"
+                                                    HeaderText="EDITAR"
+                                                    Text="✏️" />
+                                                <asp:ButtonField ButtonType="Link"
+                                                    ItemStyle-HorizontalAlign="Left"
+                                                    ControlStyle-BorderColor="Transparent"
+                                                    ControlStyle-BackColor="Red"
+                                                    CommandName="EliminarCliente"
+                                                    HeaderText="ELIMINAR"
+                                                    Text="✖️" />
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Muebles los Alpes 2023</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidad</a>
-                    <a class="link-dark text-decoration-none" href="#!">Términos de Uso</a>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Muebles los Alpes 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Términos de Uso</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>

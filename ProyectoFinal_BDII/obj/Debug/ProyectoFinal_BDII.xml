@@ -53,6 +53,33 @@ ProyectoFinal_BDII
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="F:ProyectoFinal_BDII.AddCliente._btnAgregarCliente">
+<summary>
+Control btnAgregarCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.AddEmpleado._btnAgregarEmpleado">
+<summary>
+Control btnAgregarEmpleado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.AddProducto._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoFinal_BDII.Clientes._btnAddCliente">
 <summary>
 Control btnAddCliente.
@@ -62,9 +89,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoFinal_BDII.Clientes._GridView1">
+<member name="F:ProyectoFinal_BDII.Clientes._GridViewClientes">
 <summary>
-Control GridView1.
+Control GridViewClientes.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -74,6 +101,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoFinal_BDII.Empleados._btnAddEmpleado">
 <summary>
 Control btnAddEmpleado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.Empleados._GridViewEmpleados">
+<summary>
+Control GridViewEmpleados.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -218,6 +254,24 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoFinal_BDII.LoginForm._BtnLogin">
 <summary>
 Control BtnLogin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.Productos._btnAddProducto">
+<summary>
+Control btnAddProducto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.Productos._GridViewProductos">
+<summary>
+Control GridViewProductos.
 </summary>
 <remarks>
 Campo generado automáticamente.

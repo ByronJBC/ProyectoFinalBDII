@@ -19,8 +19,8 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
         </div>
-        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>server"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" runat="
         <asp:Button ID="BtnLogin" runat="server" Text="Ingresar" OnClick="BtnLogin_Click" class="btn btn-primary"/>
        
 

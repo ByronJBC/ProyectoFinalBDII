@@ -11,23 +11,14 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Clientes
+Partial Public Class AddEmpleado
 
     '''<summary>
-    '''Control btnAddCliente.
+    '''Control btnAgregarEmpleado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnAddCliente As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control GridViewClientes.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents GridViewClientes As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents btnAgregarEmpleado As Global.System.Web.UI.WebControls.Button
 End Class

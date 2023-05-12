@@ -1,5 +1,4 @@
-﻿Imports Oracle.DataAccess.Client
-Imports Oracle.ManagedDataAccess.Client
+﻿Imports Oracle.ManagedDataAccess.Client
 Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
 
 

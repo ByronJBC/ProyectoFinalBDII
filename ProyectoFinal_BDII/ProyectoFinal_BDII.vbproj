@@ -97,6 +97,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddCliente.aspx" />
+    <Content Include="AddEmpleado.aspx" />
+    <Content Include="AddProducto.aspx" />
     <Content Include="Clientes.aspx" />
     <Content Include="Css\stylesAdmin.css" />
     <Content Include="Css\styles.css" />
@@ -129,6 +131,7 @@
     <Content Include="LoginEmpleado.aspx" />
     <Content Include="LoginForm.aspx" />
     <Content Include="Principal.aspx" />
+    <Content Include="Productos.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -143,6 +146,20 @@
     </Compile>
     <Compile Include="AddCliente.aspx.vb">
       <DependentUpon>AddCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AddEmpleado.aspx.designer.vb">
+      <DependentUpon>AddEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmpleado.aspx.vb">
+      <DependentUpon>AddEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AddProducto.aspx.designer.vb">
+      <DependentUpon>AddProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProducto.aspx.vb">
+      <DependentUpon>AddProducto.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Clientes.aspx.designer.vb">
@@ -227,6 +244,13 @@
     </Compile>
     <Compile Include="Principal.aspx.vb">
       <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

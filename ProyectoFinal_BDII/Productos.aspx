@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Empleados.aspx.vb" Inherits="ProyectoFinal_BDII.Empleados" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Productos.aspx.vb" Inherits="ProyectoFinal_BDII.Productos" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <title>Empleados - Muebles los Alpes</title>
+    <title>Productos - Muebles los Alpes</title>
 </head>
 <body id="page-top">
     <form runat="server">
@@ -34,8 +34,8 @@
         <section class="page-section bg-dark " id="empleado">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase text-light">Clientes</h2>
-                    <asp:Button ID="btnAddEmpleado" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning float-end" OnClick="BtnAddEmpleado_Click" />
+                    <h2 class="section-heading text-uppercase text-light">Productos</h2>
+                    <asp:Button ID="btnAddProducto" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning float-end" OnClick="BtnAddProducto_Click" />
                 </div>
             </div>
         </section>
@@ -48,25 +48,25 @@
                             <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <asp:GridView ID="GridViewEmpleados" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID">
+                                        <asp:GridView ID="GridViewProductos" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID">
                                             <Columns>
                                                 <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
-                                                <asp:BoundField DataField="Empleado" HeaderText="EMPLEADO" />
-                                                <asp:BoundField DataField="ROL" HeaderText="ROL" />
-                                                <asp:BoundField DataField="Telefono" HeaderText="TELEFONO" />
-                                                <asp:BoundField DataField="Email" HeaderText="EMAIL" />
+                                                <asp:BoundField DataField="Produto" HeaderText="PRODUCTO" />
+                                                <asp:BoundField DataField="Descripcion" HeaderText="DESCRIPCION" />
+                                                <asp:BoundField DataField="Tipo_Produto" HeaderText="TIPO PRODUCTO" />
+                                                <asp:BoundField DataField="Dimension" HeaderText="DIMENSION" />
                                                 <asp:ButtonField ButtonType="Link"
                                                     ItemStyle-HorizontalAlign="Left"
                                                     ControlStyle-BorderColor="Transparent"
                                                     ControlStyle-BackColor="Turquoise"
-                                                    CommandName="EditarEmpleado"
+                                                    CommandName="EditarProducto"
                                                     HeaderText="EDITAR"
                                                     Text="✏️" />
                                                 <asp:ButtonField ButtonType="Link"
                                                     ItemStyle-HorizontalAlign="Left"
                                                     ControlStyle-BorderColor="Transparent"
                                                     ControlStyle-BackColor="Red"
-                                                    CommandName="EliminarEmpleado"
+                                                    CommandName="EliminarProducto"
                                                     HeaderText="ELIMINAR"
                                                     Text="✖️" />
                                             </Columns>

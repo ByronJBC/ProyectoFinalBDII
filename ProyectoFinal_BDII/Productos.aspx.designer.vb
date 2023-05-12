@@ -11,23 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Clientes
+Partial Public Class Productos
 
     '''<summary>
-    '''Control btnAddCliente.
+    '''Control btnAddProducto.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnAddCliente As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnAddProducto As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control GridViewClientes.
+    '''Control GridViewProductos.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents GridViewClientes As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents GridViewProductos As Global.System.Web.UI.WebControls.GridView
 End Class
