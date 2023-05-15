@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AddCliente.aspx.vb" Inherits="ProyectoFinal_BDII.AddCliente" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="UpdateCliente.aspx.vb" Inherits="ProyectoFinal_BDII.UpdateCliente" %>
 
 <!DOCTYPE html>
 
@@ -10,10 +10,10 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <title>Agregar Cliente - Muebles los Alpes</title>
+    <title>Actualizar Cliente - Muebles los Alpes</title>
 </head>
 <body>
-    <form runat="server">
+<form runat="server">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
             <div class="container">
                 <a href="HomeAdmin.aspx" class="navbar-brand">
@@ -41,104 +41,104 @@
                                     <div class="table-responsive">
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer01">ID CLIENTE</label>
-                                                <asp:TextBox runat="server" ID="txtIdCliente" class="form-control" placeholder="1" required="required" ></asp:TextBox>
+                                                <label>ID CLIENTE</label>
+                                                <asp:TextBox runat="server" ID="txtIdCliente" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer02">NUMERO DOCUMENTACION</label>
-                                                <asp:TextBox runat="server" ID="txtNumDocumentacion" class="form-control" placeholder="123456789" required="required" ></asp:TextBox>
+                                                <label>NUMERO DOCUMENTACION</label>
+                                                <asp:TextBox runat="server" ID="txtNumDocumentacion" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer03">NIT</label>
-                                                <asp:TextBox runat="server" ID="txtNit" class="form-control" placeholder="112233445" required="required" ></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="validationServer04">PRIMER NOMBRE</label>
-                                                <asp:TextBox runat="server" ID="txtPrimerNombre" class="form-control" placeholder="Juan" required="required" ></asp:TextBox>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="validationServer05">SEGUNDO NOMBRE</label>
-                                                <asp:TextBox runat="server" ID="txtSegundoNombre" class="form-control" placeholder="José" required="required" ></asp:TextBox>
+                                                <label>NIT</label>
+                                                <asp:TextBox runat="server" ID="txtNit" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer06">PRIMER APELLIDO</label>
-                                                <asp:TextBox runat="server" ID="txtPrimerApellido" class="form-control" placeholder="Pérez" required="required" ></asp:TextBox>
+                                                <label>PRIMER NOMBRE</label>
+                                                <asp:TextBox runat="server" ID="txtPrimerNombre" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer07">SEGUNDO APELLIDO</label>
-                                                <asp:TextBox runat="server" ID="txtSegundoApellido" class="form-control" placeholder="Gómez" required="required" ></asp:TextBox>
+                                                <label>SEGUNDO NOMBRE</label>
+                                                <asp:TextBox runat="server" ID="txtSegundoNombre" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServerEmail">EMAIL</label>
+                                                <label>PRIMER APELLIDO</label>
+                                                <asp:TextBox runat="server" ID="txtPrimerApellido" class="form-control"></asp:TextBox>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label>SEGUNDO APELLIDO</label>
+                                                <asp:TextBox runat="server" ID="txtSegundoApellido" class="form-control"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label>EMAIL</label>
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                                     </div>
-                                                    <asp:TextBox runat="server" ID="txtEmail" class="form-control" placeholder="juanperez@mail.com" required="required" aria-describedby="inputGroupPrepend3"></asp:TextBox>
+                                                    <asp:TextBox runat="server" ID="txtEmail" class="form-control" aria-describedby="inputGroupPrepend3"></asp:TextBox>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <label for="validationServer08">CONTRASEÑA</label>
-                                                <asp:TextBox runat="server" ID="txtPassword" class="form-control" placeholder="******" required="required" ></asp:TextBox>
+                                                <label>CONTRASEÑA</label>
+                                                <asp:TextBox runat="server" ID="txtPassword" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer09">TIPO DOCUMENTACION</label>
-                                                <asp:TextBox runat="server" ID="txtTipoDocu" class="form-control" placeholder="DPI" required="required" ></asp:TextBox>
+                                                <label>TIPO DOCUMENTACION</label>
+                                                <asp:TextBox runat="server" ID="txtTipoDocu" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer10">NUMERO RESIDENCIAL</label>
-                                                <asp:TextBox runat="server" ID="txtNumResidencial" class="form-control" placeholder="1122-3344" required="required" ></asp:TextBox>
+                                                <label>NUMERO RESIDENCIAL</label>
+                                                <asp:TextBox runat="server" ID="txtNumResidencial" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer11">NUMERO CELULAR</label>
-                                                <asp:TextBox runat="server" ID="txtNumCelular" class="form-control" placeholder="1234-5678" required="required" ></asp:TextBox>
+                                                <label>NUMERO CELULAR</label>
+                                                <asp:TextBox runat="server" ID="txtNumCelular" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer17">PROFESION</label>
-                                                <asp:TextBox runat="server" ID="txtProfesion" class="form-control" placeholder="2" required="required" ></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <label for="validationServer12">PAIS</label>
-                                                <asp:TextBox runat="server" ID="txtPais" class="form-control" placeholder="Guatemala" required="required" ></asp:TextBox>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="validationServer13">DEPARTAMENTO</label>
-                                                <asp:TextBox runat="server" ID="txtDepartamento" class="form-control" placeholder="Guatemala" required="required" ></asp:TextBox>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="validationServer14">CIUDAD</label>
-                                                <asp:TextBox runat="server" ID="txtCiudad" class="form-control" placeholder="Nueva York" required="required" ></asp:TextBox>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="validationServer15">DIRECCION</label>
-                                                <asp:TextBox runat="server" ID="txtDireccion" class="form-control" placeholder="12B The Tower" required="required" ></asp:TextBox>
+                                                <label>PROFESION</label>
+                                                <asp:TextBox runat="server" ID="txtProfesion" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer16">FECHA</label>
-                                                <asp:TextBox runat="server" ID="txtFecha" class="form-control" placeholder="01/01/2000" required="required" ></asp:TextBox>
+                                                <label>PAIS</label>
+                                                <asp:TextBox runat="server" ID="txtPais" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
-                                                <label for="validationServer18">NOTAS</label>
-                                                <asp:TextBox runat="server" ID="txtNotas" class="form-control" placeholder="Texto para nota" required="required" ></asp:TextBox>
+                                                <label>DEPARTAMENTO</label>
+                                                <asp:TextBox runat="server" ID="txtDepartamento" class="form-control"></asp:TextBox>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label>CIUDAD</label>
+                                                <asp:TextBox runat="server" ID="txtCiudad" class="form-control"></asp:TextBox>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label>DIRECCION</label>
+                                                <asp:TextBox runat="server" ID="txtDireccion" class="form-control"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label>FECHA</label>
+                                                <asp:TextBox runat="server" ID="txtFecha" class="form-control"></asp:TextBox>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label>NOTAS</label>
+                                                <asp:TextBox runat="server" ID="txtNotas" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row fl text-center">
                                             <div class="col-md-12 mb-3">
-                                                <asp:Button ID="btnAgregarCliente" runat="server" Text="AGREGAR NUEVO" class="btn btn-outline-warning" OnClick="btnAgregarCliente_Click" />
+                                                <asp:Button ID="BtnActualizarCliente" runat="server" Text="ACTUALIZAR" class="btn btn-outline-warning" OnClick="BtnActualizarCliente_Click" />
                                             </div>
                                         </div>
                                     </div>

@@ -11,16 +11,34 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AddEmpleado
+Partial Public Class UpdateCliente
 
     '''<summary>
-    '''Control txtIdEmpleado.
+    '''Control txtIdCliente.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtIdEmpleado As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtIdCliente As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtNumDocumentacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtNumDocumentacion As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtNit.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtNit As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control txtPrimerNombre.
@@ -77,31 +95,76 @@ Partial Public Class AddEmpleado
     Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtArea.
+    '''Control txtTipoDocu.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtArea As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtTipoDocu As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtRol.
+    '''Control txtNumResidencial.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtRol As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNumResidencial As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtTelefono.
+    '''Control txtNumCelular.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtTelefono As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNumCelular As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtProfesion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtProfesion As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtPais.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtPais As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtDepartamento.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtDepartamento As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtCiudad.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtCiudad As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtDireccion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtDireccion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control txtFecha.
@@ -113,29 +176,20 @@ Partial Public Class AddEmpleado
     Protected WithEvents txtFecha As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtRegistro.
+    '''Control txtNotas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtRegistro As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNotas As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtSucursal.
+    '''Control BtnActualizarCliente.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtSucursal As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control btnAgregarEmpleado.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnAgregarEmpleado As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnActualizarCliente As Global.System.Web.UI.WebControls.Button
 End Class

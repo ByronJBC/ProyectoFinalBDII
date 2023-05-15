@@ -13,14 +13,14 @@ Public Class Login
 
     Private Sub Limpiar()
         txt_UserName.Text = ""
-        txt_Password.Text = ""
+        txt_PassW.Text = ""
     End Sub
 
-    Protected Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+    Protected Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_CLIENTE WHERE CLI_CORREO = :usuario AND CLI_PASSWORD = :password", Conex)
 
         cmd.Parameters.Add(":usuario", txt_UserName.Text)
-        cmd.Parameters.Add(":password", txt_Password.Text)
+        cmd.Parameters.Add(":password", txt_PassW.Text)
 
 
         Dim lct As OracleDataReader = cmd.ExecuteReader()

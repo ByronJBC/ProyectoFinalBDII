@@ -29,7 +29,7 @@
               </div>
               <div class="form-group last mb-3">
                 <label for="password">CONTRASEÑA</label>
-                <asp:TextBox id="txt_Password" runat="server" type="password" class="form-control" placeholder="******"></asp:TextBox>
+                <asp:TextBox id="txt_PassW" runat="server" type="password" class="form-control" placeholder="******"></asp:TextBox>
               </div>
                 <asp:Button ID="btnLogin" runat="server" Text="INGRESAR" OnClick="btnLogin_Click" class="btn btn-outline-warning"/>
             </form>

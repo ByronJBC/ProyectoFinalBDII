@@ -1,4 +1,5 @@
-﻿Imports System.Data.OracleClient
+﻿Imports System.ComponentModel
+Imports System.Data.OracleClient
 Imports System.Runtime.Remoting.Messaging
 Imports System.Web.Services.Description
 Imports Oracle.ManagedDataAccess.Client
@@ -15,7 +16,7 @@ Public Class Clientes
     End Sub
 
     Public Sub Llenar_Clientes()
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT CLI_CLIENTE, CLI_NUMERO_DOCUMENTACION, CLI_NIT, CLI_NUMERO_CELULAR, CLI_CORREO FROM MUE_CLIENTE", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT CLI_CLIENTE, CLI_NUMERO_DOCUMENTACION, CLI_NIT, CLI_NUMERO_RESIDENCIAL, CLI_CORREO FROM MUE_CLIENTE", Conex)
 
         Dim lct As OracleDataReader = cmd.ExecuteReader()
 
@@ -35,40 +36,46 @@ Public Class Clientes
         GridViewClientes.DataBind()
         GridViewClientes.HeaderRow.TableSection = TableRowSection.TableHeader
 
-        lct.Close()
-
     End Sub
 
-    Protected Sub GridViewClientes_RowCommandEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs) Handles GridViewClientes.RowCommand
+    Protected Sub GridViewClientes_RowCommandEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
         If e.CommandName = "EditarCliente" Then
-
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
-            Dim id As Integer = GridViewClientes.DataKeys(indice).Value
+            Dim id As String = GridViewClientes.DataKeys(indice).Value
 
-            If id = 3 Then
-                Response.Write("<script language=""javascript"">alert('Aquí se editará el cliente.');</script>")
-            End If
+            Response.Redirect("UpdateCliente.aspx?id=" + id)
 
         End If
     End Sub
 
-    Protected Sub GridViewClientes_RowCommandDelete(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs) Handles GridViewClientes.RowCommand
+    Protected Sub GridViewClientes_RowCommandDelete(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
         If e.CommandName = "EliminarCliente" Then
 
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As Integer = GridViewClientes.DataKeys(indice).Value
 
-            Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_CLIENTE WHERE CLI_CLIENTE = :id", Conex)
-            cmd.Parameters.Add(":id", id)
 
+            Dim cmd1 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_FACTURA_DETALLE WHERE FAG_FACTURA_GENERAL IN (
+                                                                        SELECT FAG_FACTURA_GENERAL FROM MUE_FACTURA_GENERAL WHERE CLI_CLIENTE = :id)", Conex)
+            cmd1.Parameters.Add(":id", id)
+            cmd1.ExecuteNonQuery()
 
-            Dim lct As OracleDataReader = cmd.ExecuteReader()
+            Dim cmd2 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_FACTURA_GENERAL WHERE CLI_CLIENTE = :id", Conex)
+            cmd2.Parameters.Add(":id", id)
+            cmd2.ExecuteNonQuery()
 
+            Dim cmd3 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_CLIENTE WHERE CLI_CLIENTE = :id", Conex)
+            cmd3.Parameters.Add(":id", id)
+            cmd3.ExecuteNonQuery()
 
+            Response.Write("<script language=""javascript"">alert('Cliente Eliminado.');</script>")
+
+            Response.Redirect("~/Clientes.aspx")
         End If
     End Sub
 
-    Protected Sub btnAddCliente_Click(sender As Object, e As EventArgs)
+    Protected Sub BtnAddCliente_Click(sender As Object, e As EventArgs)
         Response.Redirect("~/AddCliente.aspx")
     End Sub
+
 End Class

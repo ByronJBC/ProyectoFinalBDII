@@ -138,6 +138,8 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="UpdateCliente.aspx" />
+    <Content Include="UpdateEmpleado.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +253,20 @@
     </Compile>
     <Compile Include="Productos.aspx.vb">
       <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdateCliente.aspx.designer.vb">
+      <DependentUpon>UpdateCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCliente.aspx.vb">
+      <DependentUpon>UpdateCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdateEmpleado.aspx.designer.vb">
+      <DependentUpon>UpdateEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmpleado.aspx.vb">
+      <DependentUpon>UpdateEmpleado.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

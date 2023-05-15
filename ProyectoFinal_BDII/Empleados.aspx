@@ -31,10 +31,10 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section bg-dark " id="empleado">
+        <section class="page-section bg-dark " id="empleados">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase text-light">Clientes</h2>
+                    <h2 class="section-heading text-uppercase text-light">Empleados</h2>
                     <asp:Button ID="btnAddEmpleado" runat="server" Text="+ AGREGAR NUEVO" class="btn btn-outline-warning float-end" OnClick="BtnAddEmpleado_Click" />
                 </div>
             </div>
@@ -48,7 +48,7 @@
                             <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <asp:GridView ID="GridViewEmpleados" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID">
+                                        <asp:GridView ID="GridViewEmpleados" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID" OnRowCommand="GridViewEmpleados_RowCommandEdit">
                                             <Columns>
                                                 <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
                                                 <asp:BoundField DataField="Empleado" HeaderText="EMPLEADO" />

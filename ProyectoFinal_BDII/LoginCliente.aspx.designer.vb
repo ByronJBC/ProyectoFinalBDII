@@ -23,13 +23,13 @@ Partial Public Class Login
     Protected WithEvents txt_UserName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txt_Password.
+    '''Control txt_PassW.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Password As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_PassW As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btnLogin.

@@ -34,7 +34,35 @@ Public Class Empleados
 
     End Sub
 
+    Protected Sub GridViewEmpleados_RowCommandEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
+        If e.CommandName = "EditarEmpleado" Then
+            Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
+            Dim id As String = GridViewEmpleados.DataKeys(indice).Value
+
+            Response.Redirect("UpdateEmpleado.aspx?id=" + id)
+
+        End If
+    End Sub
+
+    Protected Sub GridViewEmpleados_RowCommandDelete(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
+        If e.CommandName = "EliminarEmpleado" Then
+
+            Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
+            Dim id As Integer = GridViewEmpleados.DataKeys(indice).Value
+
+            Dim cmd3 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_EMPLEADOS WHERE EMP_EMPLEADO = :id", Conex)
+            cmd3.Parameters.Add(":id", id)
+            cmd3.ExecuteNonQuery()
+
+            Response.Write("<script language=""javascript"">alert('Empleado Eliminado.');</script>")
+
+            Response.Redirect("~/Empleado.aspx")
+        End If
+    End Sub
+
+
     Protected Sub BtnAddEmpleado_Click(sender As Object, e As EventArgs)
         Response.Redirect("~/AddEmpleado.aspx")
     End Sub
+
 End Class

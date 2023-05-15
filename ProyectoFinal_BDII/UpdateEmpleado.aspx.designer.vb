@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AddEmpleado
+Partial Public Class UpdateEmpleado
 
     '''<summary>
     '''Control txtIdEmpleado.
@@ -131,11 +131,11 @@ Partial Public Class AddEmpleado
     Protected WithEvents txtSucursal As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnAgregarEmpleado.
+    '''Control btnActualizarEmpleado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnAgregarEmpleado As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnActualizarEmpleado As Global.System.Web.UI.WebControls.Button
 End Class
