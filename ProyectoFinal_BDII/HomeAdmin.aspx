@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="row align-items-center justify-content-center float-end p-3 m-0">
-                <asp:Button ID="BtnInvGeneral" runat="server" Text="Inventario General" class="btn btn-primary btn-xl text-uppercase" />
+                <asp:Button ID="BtnInvGeneral" runat="server" Text="Inventario General" class="btn btn-primary btn-xl text-uppercase" OnClick="BtnInvGeneral_Click" />
             </div>
         </div>
     </section>

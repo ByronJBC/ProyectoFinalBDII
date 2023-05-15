@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AddProducto.aspx.vb" Inherits="ProyectoFinal_BDII.AddProducto" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="UpdateProducto.aspx.vb" Inherits="ProyectoFinal_BDII.UpdateProductos" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <title>Agregar Producto - Muebles los Alpes</title>
+    <title>Actualizar Producto - Muebles los Alpes</title>
 </head>
 <body>
     <form runat="server">
@@ -42,56 +42,56 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label>ID PRODUCTO</label>
-                                                <asp:TextBox runat="server" ID="txtIdProducto" class="form-control" placeholder="1" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtIdProducto" class="form-control" Enabled="false"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label>NOMBRE</label>
-                                                <asp:TextBox runat="server" ID="txtNombre" class="form-control" placeholder="Mesa" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtNombre" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label>DESCRIPCION</label>
-                                                <asp:TextBox runat="server" ID="txtDescripcion" class="form-control" placeholder="Fabricada con Madera de Roble" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtDescripcion" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 mb-3">
                                                 <label>TIPO PRODUCTO</label>
-                                                <asp:TextBox runat="server" ID="txtTipoProducto" class="form-control" placeholder="2" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtTipoProducto" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
                                                 <label>TIPO MATERIAL</label>
-                                                <asp:TextBox runat="server" ID="txtTipoMaterial" class="form-control" placeholder="3" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtTipoMaterial" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
                                                 <label>DIMENSION</label>
-                                                <asp:TextBox runat="server" ID="txtDimension" class="form-control" placeholder="1" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtDimension" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-3 mb-3">
                                                 <label>COLOR</label>
-                                                <asp:TextBox runat="server" ID="txtColor" class="form-control" placeholder="3" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtColor" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label>PESO</label>
-                                                <asp:TextBox runat="server" ID="txtPeso" class="form-control" placeholder="10 kg" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtPeso" class="form-control"></asp:TextBox>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label>NOMBRE IMAGEN</label>
-                                                <asp:TextBox runat="server" ID="txtNombreImagen" class="form-control" placeholder="mesa.jpg" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtNombreImagen" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 mb-3">
                                                 <label>IMAGEN</label>
-                                                <asp:TextBox runat="server" ID="txtImagen" class="form-control" placeholder="mesa.jpg" required="required" ></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtImagen" class="form-control"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row fl text-center">
                                             <div class="col-md-12 mb-3">
-                                                <asp:Button ID="BtnAgregarProducto" runat="server" Text="AGREGAR NUEVO" class="btn btn-outline-warning" OnClick="BtnAgregarProducto_Click" />
+                                                <asp:Button ID="BtnActualizarProducto" runat="server" Text="ACTUALIZAR" class="btn btn-outline-warning" OnClick="BtnActualizarProducto_Click" />
                                             </div>
                                         </div>
                                     </div>

@@ -22,7 +22,7 @@ Public Class Empleados
             New System.Data.DataColumn("Telefono"),
             New System.Data.DataColumn("Email")})
         While (lct.Read())
-            dt.Rows.Add(lct(0), lct(1), lct(10), lct(8), lct(5))
+            dt.Rows.Add(lct(0), lct(1), lct(11), lct(8), lct(5))
         End While
 
 
@@ -56,7 +56,7 @@ Public Class Empleados
 
             Response.Write("<script language=""javascript"">alert('Empleado Eliminado.');</script>")
 
-            Response.Redirect("~/Empleado.aspx")
+            Response.Redirect("~/Empleados.aspx")
         End If
     End Sub
 

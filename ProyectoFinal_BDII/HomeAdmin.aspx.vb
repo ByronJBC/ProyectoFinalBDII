@@ -12,4 +12,8 @@
     Protected Sub BtnEmpleados_Click(sender As Object, e As EventArgs)
         Response.Redirect("~/Empleados.aspx")
     End Sub
+
+    Protected Sub BtnInvGeneral_Click(sender As Object, e As EventArgs)
+        Response.Redirect("~/Productos.aspx")
+    End Sub
 End Class

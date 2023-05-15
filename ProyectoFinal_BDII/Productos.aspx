@@ -31,7 +31,7 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section bg-dark " id="empleado">
+        <section class="page-section bg-dark " id="productos">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase text-light">Productos</h2>
@@ -48,13 +48,13 @@
                             <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <asp:GridView ID="GridViewProductos" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID">
+                                        <asp:GridView ID="GridViewProductos" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID" OnRowCommand="GridViewProductos_RowCommandEdit">
                                             <Columns>
                                                 <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
-                                                <asp:BoundField DataField="Produto" HeaderText="PRODUCTO" />
+                                                <asp:BoundField DataField="Producto" HeaderText="PRODUCTO" />
                                                 <asp:BoundField DataField="Descripcion" HeaderText="DESCRIPCION" />
-                                                <asp:BoundField DataField="Tipo_Produto" HeaderText="TIPO PRODUCTO" />
-                                                <asp:BoundField DataField="Dimension" HeaderText="DIMENSION" />
+                                                <asp:BoundField DataField="Color" HeaderText="COLOR" />
+                                                <asp:BoundField DataField="Peso" HeaderText="PESO" />
                                                 <asp:ButtonField ButtonType="Link"
                                                     ItemStyle-HorizontalAlign="Left"
                                                     ControlStyle-BorderColor="Transparent"
@@ -99,5 +99,6 @@
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+</body>
 </body>
 </html>

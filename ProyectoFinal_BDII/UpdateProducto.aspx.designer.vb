@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AddProducto
+Partial Public Class UpdateProductos
 
     '''<summary>
     '''Control txtIdProducto.
@@ -104,11 +104,11 @@ Partial Public Class AddProducto
     Protected WithEvents txtImagen As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control BtnAgregarProducto.
+    '''Control BtnActualizarProducto.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnAgregarProducto As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnActualizarProducto As Global.System.Web.UI.WebControls.Button
 End Class
