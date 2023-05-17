@@ -85,41 +85,31 @@ Public Class UpdateCliente
 
 
     Protected Sub BtnActualizarCliente_Click(sender As Object, e As EventArgs)
-        Dim xSQL As New StringBuilder
-        xSQL.AppendLine("UPDATE MUE_CLIENTE")
-        xSQL.AppendLine("SET")
-        xSQL.AppendLine("CLI_NIT = :nit")
-        xSQL.AppendLine("WHERE CLI_CLIENTE = :id")
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_CLIENTE 
+        SET CLI_NUMERO_DOCUMENTACION=" & txtNumDocumentacion.Text & ",
+        CLI_NIT=" & txtNit.Text & ",CLI_PRIMER_NOMBRE='" & txtPrimerNombre.Text & "',
+        CLI_SEGUNDO_NOMBRE='" & txtSegundoNombre.Text & "',CLI_PRIMER_APELLIDO='" & txtPrimerApellido.Text & "',
+        CLI_SEGUNDO_APELLIDO='" & txtSegundoApellido.Text & "',CLI_CORREO='" & txtEmail.Text & "',
+        CLI_PASSWORD='" & txtPassword.Text & "',CLI_TIPO_DOCUMENTACION='" & txtTipoDocu.Text & "',
+        CLI_NUMERO_RESIDENCIAL=" & txtNumResidencial.Text & ",CLI_NUMERO_CELULAR=" & txtNumCelular.Text & ",
+        CLI_PAIS='" & txtPais.Text & "',CLI_DEPARTAMENTO='" & txtDepartamento.Text & "',
+        CLI_CIUDAD_RESIDENCIA='" & txtCiudad.Text & "',CLI_DIRECCION='" & txtDireccion.Text & "',
+        CLI_FECHA='" & txtFecha.Text & "',PRS_PROFESION=" & txtProfesion.Text & ",
+        CLI_NOTAS='" & txtNotas.Text & "' WHERE CLI_CLIENTE =" & txtIdCliente.Text & "", Conex)
 
-        Dim cmd1 As New OracleCommand(xSQL.ToString, Conex)
+        cmd.ExecuteNonQuery()
 
-        cmd1.Parameters.Add(":nit", txtNit.Text)
-        cmd1.Parameters.Add(":id", txtIdCliente.Text)
-        'cmd1.ExecuteNonQuery()
-
-        'Dim command As OracleCommand = Conex.CreateCommand()
         Dim transaction As OracleTransaction
 
         transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd1.Transaction = transaction
-
-        cmd1.ExecuteNonQuery()
+        cmd.Transaction = transaction
         transaction.Commit()
 
         Conexion.Conex.Close()
-
-
-
 
         Limpiar()
 
         Response.Write("<script language=""javascript"">alert('Cliente Actualizado.');</script>")
         Response.Redirect("~/Clientes.aspx")
     End Sub
-
-    Protected Sub TextBox1_TextChanged1(sender As Object, e As EventArgs)
-        Lbl1.Text = Server.HtmlEncode(txtNit.Text)
-    End Sub
-
-
 End Class

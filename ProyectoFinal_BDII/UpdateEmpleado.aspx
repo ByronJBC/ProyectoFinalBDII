@@ -42,7 +42,7 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label>ID EMPLEADO</label>
-                                                <asp:TextBox runat="server" ID="txtIdEmpleado" class="form-control"></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtIdEmpleado" class="form-control" Enabled="false"s></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="row">

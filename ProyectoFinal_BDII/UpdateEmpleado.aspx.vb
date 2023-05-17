@@ -6,12 +6,17 @@ Public Class UpdateEmpleado
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
 
-        Dim codigo = Request.QueryString("id")
 
-        LlenarEmpleado(codigo)
+
+
+        If Not Page.IsPostBack Then
+            LlenarEmpleado()
+        End If
     End Sub
 
-    Public Sub LlenarEmpleado(ByVal codigo As String)
+    Public Sub LlenarEmpleado()
+        Dim codigo = Request.QueryString("id")
+
         Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_EMPLEADOS WHERE EMP_EMPLEADO = :id", Conex)
         cmd.Parameters.Add(":id", codigo)
 
@@ -53,31 +58,24 @@ Public Class UpdateEmpleado
     End Sub
 
     Protected Sub btnActualizarEmpleado_Click1(sender As Object, e As EventArgs)
-        Dim xSQL As New StringBuilder
-        xSQL.AppendLine("UPDATE MUE_EMPLEADOS")
-        xSQL.AppendLine("SET")
-        xSQL.AppendLine("ARE_AREA = :area")
-        xSQL.AppendLine("WHERE EMP_EMPLEADO = :id")
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_EMPLEADOS 
+        SET EMP_PRIMER_NOMBRE='" & txtPrimerNombre.Text & "',
+        EMP_SEGUNDO_NOMBRE='" & txtSegundoNombre.Text & "',EMP_PRIMER_APELLIDO='" & txtPrimerApellido.Text & "',
+        EMP_SEGUNDO_APELLIDO='" & txtSegundoApellido.Text & "',EMP_CORREO='" & txtEmail.Text & "',
+        EMP_PASSWORD='" & txtPassword.Text & "',ARE_AREA='" & txtArea.Text & "',
+        EMP_TELEFONO='" & txtTelefono.Text & "',EMP_FECHA='" & txtFecha.Text & "',
+        ROL_ROL=" & txtRol.Text & ",EMP_REGISTRO=" & txtRegistro.Text & ",
+        SUC_SUCURSAL='" & txtSucursal.Text & "' WHERE EMP_EMPLEADO =" & txtIdEmpleado.Text & "", Conex)
 
-        Dim cmd1 As New OracleCommand(xSQL.ToString, Conex)
+        cmd.ExecuteNonQuery()
 
-        cmd1.Parameters.Add(":area", txtArea.Text)
-        cmd1.Parameters.Add(":id", txtIdEmpleado.Text)
-        'cmd1.ExecuteNonQuery()
-
-        'Dim command As OracleCommand = Conex.CreateCommand()
         Dim transaction As OracleTransaction
 
         transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd1.Transaction = transaction
-
-        cmd1.ExecuteNonQuery()
+        cmd.Transaction = transaction
         transaction.Commit()
 
         Conexion.Conex.Close()
-
-
-
 
         Limpiar()
 
