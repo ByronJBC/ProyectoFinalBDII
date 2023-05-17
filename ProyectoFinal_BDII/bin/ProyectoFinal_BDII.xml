@@ -665,6 +665,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoFinal_BDII.UpdateCliente._BtnCargar">
+<summary>
+Control BtnCargar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoFinal_BDII.UpdateCliente._txtNumDocumentacion">
 <summary>
 Control txtNumDocumentacion.
@@ -677,6 +686,24 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoFinal_BDII.UpdateCliente._txtNit">
 <summary>
 Control txtNit.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.UpdateCliente._TextBox1">
+<summary>
+Control TextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoFinal_BDII.UpdateCliente._Lbl1">
+<summary>
+Control Lbl1.
 </summary>
 <remarks>
 Campo generado automáticamente.

@@ -23,6 +23,15 @@ Partial Public Class UpdateCliente
     Protected WithEvents txtIdCliente As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control BtnCargar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnCargar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control txtNumDocumentacion.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,24 @@ Partial Public Class UpdateCliente
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNit As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control TextBox1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control Lbl1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control txtPrimerNombre.

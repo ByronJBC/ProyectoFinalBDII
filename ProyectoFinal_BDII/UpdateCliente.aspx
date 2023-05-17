@@ -44,6 +44,9 @@
                                                 <label>ID CLIENTE</label>
                                                 <asp:TextBox runat="server" ID="txtIdCliente" class="form-control"></asp:TextBox>
                                             </div>
+                                            <div class="col-md-6 mb-3">
+                                                <asp:Button ID="BtnCargar" runat="server" Text="CARGAR" class="btn btn-outline-warning" OnClick="BtnCargar_Click" />
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
@@ -52,7 +55,15 @@
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label>NIT</label>
-                                                <asp:TextBox runat="server" ID="txtNit" class="form-control"></asp:TextBox>
+                                                <asp:TextBox runat="server" ID="txtNit"  OnTextChanged="TextBox1_TextChanged1" AutoPostBack="true"></asp:TextBox>
+                                            </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label>NIT 2</label>
+                                                 <asp:TextBox runat="server" ID="TextBox1" ></asp:TextBox>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <asp:Label ID="Lbl1" runat="server"></asp:Label>
+                                                <label>NIT 2</label>
                                             </div>
                                         </div>
                                         <div class="row">

@@ -1,19 +1,24 @@
-﻿Imports Oracle.ManagedDataAccess.Client
+﻿Imports System.Reflection.Emit
+Imports Oracle.ManagedDataAccess.Client
 Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
 
 Public Class UpdateCliente
     Inherits System.Web.UI.Page
 
+    Public nitClt As String
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
 
-        Dim codigo = Request.QueryString("id")
-
-        LlenarCliente(codigo)
+        If Not Page.IsPostBack Then
+            LlenarCliente()
+        End If
 
     End Sub
 
-    Public Sub LlenarCliente(ByVal codigo As String)
+    Public Sub LlenarCliente()
+        Dim codigo As String = Request.QueryString("id")
+
         Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_CLIENTE WHERE CLI_CLIENTE = :id", Conex)
         cmd.Parameters.Add(":id", codigo)
 
@@ -67,12 +72,24 @@ Public Class UpdateCliente
     End Sub
 
 
-    Protected Sub BtnActualizarCliente_Click(sender As Object, e As EventArgs) Handles BtnActualizarCliente.Click
+
+    Public Sub txtChanged(ByVal sender As Object, ByVal e As EventArgs)
+        nitClt = (CType(sender, TextBox)).Text
+        nitClt = nitClt.ToUpper()
+        'txtNit2.Text = nitClt
+    End Sub
+
+    Protected Sub TextBox1_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
+        'Label1.Text = "hola"
+    End Sub
+
+
+    Protected Sub BtnActualizarCliente_Click(sender As Object, e As EventArgs)
         Dim xSQL As New StringBuilder
         xSQL.AppendLine("UPDATE MUE_CLIENTE")
         xSQL.AppendLine("SET")
         xSQL.AppendLine("CLI_NIT = :nit")
-        xSQL.AppendLine(" WHERE CLI_CLIENTE = :id")
+        xSQL.AppendLine("WHERE CLI_CLIENTE = :id")
 
         Dim cmd1 As New OracleCommand(xSQL.ToString, Conex)
 
@@ -99,5 +116,10 @@ Public Class UpdateCliente
         Response.Write("<script language=""javascript"">alert('Cliente Actualizado.');</script>")
         Response.Redirect("~/Clientes.aspx")
     End Sub
+
+    Protected Sub TextBox1_TextChanged1(sender As Object, e As EventArgs)
+        Lbl1.Text = Server.HtmlEncode(txtNit.Text)
+    End Sub
+
 
 End Class
