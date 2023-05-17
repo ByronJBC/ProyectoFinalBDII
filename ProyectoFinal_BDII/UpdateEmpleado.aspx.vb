@@ -6,9 +6,6 @@ Public Class UpdateEmpleado
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
 
-
-
-
         If Not Page.IsPostBack Then
             LlenarEmpleado()
         End If

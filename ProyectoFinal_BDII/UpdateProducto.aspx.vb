@@ -7,12 +7,14 @@ Public Class UpdateProductos
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AbrirConexion()
 
-        Dim codigo = Request.QueryString("id")
-
-        LlenarProducto(codigo)
+        If Not Page.IsPostBack Then
+            LlenarProducto()
+        End If
     End Sub
 
-    Public Sub LlenarProducto(ByVal codigo As String)
+    Public Sub LlenarProducto()
+        Dim codigo = Request.QueryString("id")
+
         Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_PRODUCTO WHERE PRO_PRODUCTO = :id", Conex)
         cmd.Parameters.Add(":id", codigo)
 
@@ -47,25 +49,20 @@ Public Class UpdateProductos
         txtImagen.Text = ""
     End Sub
     Protected Sub BtnActualizarProducto_Click(sender As Object, e As EventArgs)
-        Dim xSQL As New StringBuilder
-        xSQL.AppendLine("UPDATE MUE_PRODUCTO")
-        xSQL.AppendLine("SET")
-        xSQL.AppendLine("PRO_DESCRIPCION = :descripcion")
-        xSQL.AppendLine("WHERE PRO_PRODUCTO = :id")
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_PRODUCTO 
+        SET PRO_DESCRIPCION='" & txtDescripcion.Text & "',PRO_NOMBRE='" & txtNombre.Text & "',
+        TIP_TIPO_PRODUCTO='" & txtTipoProducto.Text & "',TIM_TIPO_MATERIAL='" & txtTipoMaterial.Text & "',
+        DIM_DIMENSION='" & txtDimension.Text & "',COL_COLOR='" & txtColor.Text & "',
+        PRO_PESO='" & txtPeso.Text & "',PRO_IMAGEN='" & txtImagen.Text & "',
+        PRO_NOMBRE_IMAGEN='" & txtNombreImagen.Text & "'
+        WHERE PRO_PRODUCTO =" & txtIdProducto.Text & "", Conex)
 
-        Dim cmd1 As New OracleCommand(xSQL.ToString, Conex)
+        cmd.ExecuteNonQuery()
 
-        cmd1.Parameters.Add(":descripcion", txtDescripcion.Text)
-        cmd1.Parameters.Add(":id", txtIdProducto.Text)
-        'cmd1.ExecuteNonQuery()
-
-        'Dim command As OracleCommand = Conex.CreateCommand()
         Dim transaction As OracleTransaction
 
         transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd1.Transaction = transaction
-
-        cmd1.ExecuteNonQuery()
+        cmd.Transaction = transaction
         transaction.Commit()
 
         Conexion.Conex.Close()

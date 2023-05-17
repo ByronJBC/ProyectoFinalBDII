@@ -10,7 +10,7 @@ Public Class Empleados
     End Sub
 
     Public Sub Llenar_Empleados()
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_EMPLEADOS", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MOSTRAR_CLIENTES", Conex)
 
         Dim lct As OracleDataReader = cmd.ExecuteReader()
 
