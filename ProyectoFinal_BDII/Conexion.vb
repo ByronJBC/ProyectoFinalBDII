@@ -5,7 +5,7 @@ Module Conexion
 
     Public Sub AbrirConexion()
         Conex = New OracleConnection With {
-            .ConnectionString = "User Id=PFBDII1;Password=1234;Data Source=localhost:1521/orcl; "
+            .ConnectionString = "User Id=PFDBII;Password=1234;Data Source=localhost:1521/ORCL; "
         }
         Conex.Open()
     End Sub

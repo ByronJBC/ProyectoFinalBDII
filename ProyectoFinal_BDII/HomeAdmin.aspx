@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="#inventario">Inventario</a></li>
                     <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#empleados">Empleados</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reportes">Reportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reportes"></a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Más Vendidos</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Productos con más movimiento en los últimos días.</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
@@ -54,11 +54,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto10.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Threads</div>
-                            <div class="inventario-caption-subheading text-muted">Illustration</div>
+                            <div class="inventario-caption-heading">Silla para exterior</div>
+                            <div class="inventario-caption-subheading text-muted">Fabricada con materiales alta calidad.</div>
                         </div>
                     </div>
                 </div>
@@ -69,11 +69,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto2.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Explore</div>
-                            <div class="inventario-caption-subheading text-muted">Graphic Design</div>
+                            <div class="inventario-caption-heading">Mesita de noche</div>
+                            <div class="inventario-caption-subheading text-muted">Mesa de madera, tamaño pequeño.</div>
                         </div>
                     </div>
                 </div>
@@ -84,11 +84,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto9.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Finish</div>
-                            <div class="inventario-caption-subheading text-muted">Identity</div>
+                            <div class="inventario-caption-heading">Estanteria de madena</div>
+                            <div class="inventario-caption-subheading text-muted">Fabricada con materiales de alta calidad.</div>
                         </div>
                     </div>
                 </div>
@@ -99,11 +99,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto7.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Lines</div>
-                            <div class="inventario-caption-subheading text-muted">Branding</div>
+                            <div class="inventario-caption-heading">Silla para interior</div>
+                            <div class="inventario-caption-subheading text-muted">Silla confortable de color negro.</div>
                         </div>
                     </div>
                 </div>
@@ -114,11 +114,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto8.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Southwest</div>
-                            <div class="inventario-caption-subheading text-muted">Website Design</div>
+                            <div class="inventario-caption-heading">Mesa plegable</div>
+                            <div class="inventario-caption-subheading text-muted">Mesa de madera plegable de tamaño pequeño.</div>
                         </div>
                     </div>
                 </div>
@@ -129,11 +129,11 @@
                             <div class="inventario-hover">
                                 <div class="inventario-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            <img class="img-fluid" src="Img/producto4.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Window</div>
-                            <div class="inventario-caption-subheading text-muted">Photography</div>
+                            <div class="inventario-caption-heading">Estantería alta</div>
+                            <div class="inventario-caption-subheading text-muted">Estantería de madera, alta y angosta.</div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Mejores Clientes</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Clientes con más compras en los últimos días.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -158,12 +158,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4 class="subheading">#1</h4>
+                                <h4>Ana María González Sánchez</h4>
                             </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
+                            
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -172,11 +170,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <h4>#2</h4>
+                                <h4 class="subheading">Juan David Gómez Pérez</h4>
                             </div>
                         </div>
                     </li>
@@ -186,11 +181,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <h4>#3</h4>
+                                <h4 class="subheading">Carla María Gómez Hernández</h4>
                             </div>
                         </div>
                     </li>
@@ -200,21 +192,18 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <h4>#4</h4>
+                                <h4 class="subheading">Mario Alberto Cruz Solis</h4>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4>Be Part
+                            <h4>Sé parte
                                 <br />
-                                Of Our
+                                de nuestra
                                 <br />
-                                Story!
+                                Historia!
                             </h4>
                         </div>
                     </li>
@@ -229,43 +218,43 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Mejores Empleados</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Empleados con mayor cantidad de ventas.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="empleados-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <h4>Carlos Enrique Martínez Soto</h4>
+                            <p class="text-muted">Asistente Administrativo</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Carlos Martinez Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Carlos Martinez Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Carlos Martinez LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="empleados-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <h4>María José Pérez Ramírez</h4>
+                            <p class="text-muted">Jefe de Producción</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Maria Perez Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Maria Perez Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Maria Perez LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="empleados-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <h4>Juan Carlos Gómez García</h4>
+                            <p class="text-muted">Gerente de Operaciones</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Juan Gómez Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Juan Gómez Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Juan Gómez LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
-                        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                        <p class="Muebleria Los Alpes posse una gran cantidad artículos."></p>
                     </div>
                 </div>
             <div class="row align-items-center justify-content-center float-end">
@@ -276,7 +265,7 @@
         </section>
     
     <!-- reportes-->
-    <section class="page-section" id="reportes">
+    <!--<section class="page-section" id="reportes">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Generar Reporte</h2>
@@ -288,7 +277,7 @@
                 <button class="btn btn-primary btn-xl text-uppercase disabled" id="reportClientes" type="submit">Reporte de Clientes</button>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">
@@ -319,23 +308,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <h2 class="text-uppercase">Silla para exterior</h2>
+                                <p class="item-intro text-muted">Fabricada con materiales alta calidad.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto10.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Threads
+                                        <strong>Peso:</strong>
+                                        15 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Illustration
+                                        <strong>Color:</strong>
+                                        Blanco y Negro
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>

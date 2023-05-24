@@ -1,5 +1,4 @@
-﻿Imports Oracle.ManagedDataAccess.Client
-Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
+﻿Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
 Public Class UpdateEmpleado
     Inherits System.Web.UI.Page
 
@@ -55,25 +54,49 @@ Public Class UpdateEmpleado
     End Sub
 
     Protected Sub btnActualizarEmpleado_Click1(sender As Object, e As EventArgs)
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_EMPLEADOS 
-        SET EMP_PRIMER_NOMBRE='" & txtPrimerNombre.Text & "',
-        EMP_SEGUNDO_NOMBRE='" & txtSegundoNombre.Text & "',EMP_PRIMER_APELLIDO='" & txtPrimerApellido.Text & "',
-        EMP_SEGUNDO_APELLIDO='" & txtSegundoApellido.Text & "',EMP_CORREO='" & txtEmail.Text & "',
-        EMP_PASSWORD='" & txtPassword.Text & "',ARE_AREA='" & txtArea.Text & "',
-        EMP_TELEFONO='" & txtTelefono.Text & "',EMP_FECHA='" & txtFecha.Text & "',
-        ROL_ROL=" & txtRol.Text & ",EMP_REGISTRO=" & txtRegistro.Text & ",
-        SUC_SUCURSAL='" & txtSucursal.Text & "' WHERE EMP_EMPLEADO =" & txtIdEmpleado.Text & "", Conex)
+        Dim idEmpleado As Integer = txtIdEmpleado.Text
+        Dim primerNombre As String = txtPrimerNombre.Text
+        Dim segundoNombre As String = txtSegundoNombre.Text
+        Dim primerApellido As String = txtPrimerApellido.Text
+        Dim segundoApellido As String = txtSegundoApellido.Text
+        Dim correo As String = txtEmail.Text
+        Dim password As String = txtPassword.Text
+        Dim area As Integer = txtArea.Text
+        Dim telefono As Integer = txtTelefono.Text
+        Dim fecha As String = txtFecha.Text
+        Dim rol As Integer = txtRol.Text
+        Dim registro As Integer = txtRegistro.Text
+        Dim sucursal As Integer = txtSucursal.Text
+        Dim activo As Integer = 1
+        Dim codeError As Integer
+        Dim msgeError As String = ""
 
+
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("MODIFICAR_EMPLEADO", Conex) With {
+                .CommandType = CommandType.StoredProcedure
+            }
+
+        cmd.Parameters.Add(":id", idEmpleado)
+        cmd.Parameters.Add(":primerNom", primerNombre)
+        cmd.Parameters.Add(":segundoNom", segundoNombre)
+        cmd.Parameters.Add(":primerApe", primerApellido)
+        cmd.Parameters.Add(":segundoApe", segundoApellido)
+        cmd.Parameters.Add(":correo", correo)
+        cmd.Parameters.Add(":password", password)
+        cmd.Parameters.Add(":area", area)
+        cmd.Parameters.Add(":telefono", telefono)
+        cmd.Parameters.Add(":fecha", fecha)
+        cmd.Parameters.Add(":rol", rol)
+        cmd.Parameters.Add(":registro", registro)
+        cmd.Parameters.Add(":sucursal", sucursal)
+        cmd.Parameters.Add(":activo", activo)
+        cmd.Parameters.Add(":codeError", codeError)
+        cmd.Parameters.Add(":msgeError", msgeError)
         cmd.ExecuteNonQuery()
 
-        Dim transaction As OracleTransaction
-
-        transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd.Transaction = transaction
-        transaction.Commit()
-
+        Console.WriteLine("Codigo de error: ", codeError)
+        Console.WriteLine("Descripcion de error: ", msgeError)
         Conexion.Conex.Close()
-
         Limpiar()
 
         Response.Write("<script language=""javascript"">alert('Empleado Actualizado.');</script>")

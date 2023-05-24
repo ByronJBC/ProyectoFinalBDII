@@ -10,7 +10,7 @@ Public Class Empleados
     End Sub
 
     Public Sub Llenar_Empleados()
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MOSTRAR_CLIENTES", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MOSTRAR_EMPLEADOS", Conex)
 
         Dim lct As OracleDataReader = cmd.ExecuteReader()
 
@@ -22,7 +22,7 @@ Public Class Empleados
             New System.Data.DataColumn("Telefono"),
             New System.Data.DataColumn("Email")})
         While (lct.Read())
-            dt.Rows.Add(lct(0), lct(1), lct(11), lct(8), lct(5))
+            dt.Rows.Add(lct(0), lct(1), lct(2), lct(3), lct(4))
         End While
 
 
@@ -34,32 +34,37 @@ Public Class Empleados
 
     End Sub
 
-    Protected Sub GridViewEmpleados_RowCommandEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
+    Protected Sub GridViewEmpleados_RowCommand(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
         If e.CommandName = "EditarEmpleado" Then
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As String = GridViewEmpleados.DataKeys(indice).Value
 
             Response.Redirect("UpdateEmpleado.aspx?id=" + id)
 
-        End If
-    End Sub
-
-    Protected Sub GridViewEmpleados_RowCommandDelete(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
-        If e.CommandName = "EliminarEmpleado" Then
-
+        ElseIf e.CommandName = "EliminarEmpleado" Then
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As Integer = GridViewEmpleados.DataKeys(indice).Value
+            Dim codeError As Integer
+            Dim msgeError As String = ""
 
-            Dim cmd3 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_EMPLEADOS WHERE EMP_EMPLEADO = :id", Conex)
-            cmd3.Parameters.Add(":id", id)
-            cmd3.ExecuteNonQuery()
+            Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("ELIMINAR_EMPLEADO", Conex) With {
+                .CommandType = CommandType.StoredProcedure
+            }
+
+            cmd.Parameters.Add(":id", id)
+            cmd.Parameters.Add(":codeError", codeError)
+            cmd.Parameters.Add(":msgeError", msgeError)
+            cmd.ExecuteNonQuery()
+
+            Console.WriteLine("Codigo de error: ", codeError)
+            Console.WriteLine("Descripcion de error: ", msgeError)
 
             Response.Write("<script language=""javascript"">alert('Empleado Eliminado.');</script>")
-
             Response.Redirect("~/Empleados.aspx")
+        Else
+            Response.Write("<script language=""javascript"">alert('Opción Inválida.');</script>")
         End If
     End Sub
-
 
     Protected Sub BtnAddEmpleado_Click(sender As Object, e As EventArgs)
         Response.Redirect("~/AddEmpleado.aspx")

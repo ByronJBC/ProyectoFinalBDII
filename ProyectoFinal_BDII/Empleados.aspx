@@ -48,7 +48,7 @@
                             <div class="card shadow-2-strong" style="background-color: #f5f7fa;">
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <asp:GridView ID="GridViewEmpleados" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID" OnRowCommand="GridViewEmpleados_RowCommandEdit">
+                                        <asp:GridView ID="GridViewEmpleados" class="table table-borderless mb-0 " runat="server" AutoGenerateColumns="false" DataKeyNames="ID" OnRowCommand="GridViewEmpleados_RowCommand">
                                             <Columns>
                                                 <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
                                                 <asp:BoundField DataField="Empleado" HeaderText="EMPLEADO" />

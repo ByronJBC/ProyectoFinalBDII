@@ -1,5 +1,4 @@
-﻿Imports Oracle.ManagedDataAccess.Client
-Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
+﻿Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
 
 Public Class UpdateProductos
     Inherits System.Web.UI.Page
@@ -48,25 +47,44 @@ Public Class UpdateProductos
         txtNombreImagen.Text = ""
         txtImagen.Text = ""
     End Sub
-    Protected Sub BtnActualizarProducto_Click(sender As Object, e As EventArgs)
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_PRODUCTO 
-        SET PRO_DESCRIPCION='" & txtDescripcion.Text & "',PRO_NOMBRE='" & txtNombre.Text & "',
-        TIP_TIPO_PRODUCTO='" & txtTipoProducto.Text & "',TIM_TIPO_MATERIAL='" & txtTipoMaterial.Text & "',
-        DIM_DIMENSION='" & txtDimension.Text & "',COL_COLOR='" & txtColor.Text & "',
-        PRO_PESO='" & txtPeso.Text & "',PRO_IMAGEN='" & txtImagen.Text & "',
-        PRO_NOMBRE_IMAGEN='" & txtNombreImagen.Text & "'
-        WHERE PRO_PRODUCTO =" & txtIdProducto.Text & "", Conex)
 
+    Protected Sub BtnActualizarProducto_Click(sender As Object, e As EventArgs)
+        Dim idProducto As Integer = txtIdProducto.Text
+        Dim descripcion As String = txtDescripcion.Text
+        Dim nombre As String = txtNombre.Text
+        Dim tipoProducto As String = txtTipoProducto.Text
+        Dim tipoMaterial As String = txtTipoMaterial.Text
+        Dim dimension As String = txtDimension.Text
+        Dim color As String = txtColor.Text
+        Dim peso As String = txtPeso.Text
+        Dim imagen As String = txtImagen.Text
+        Dim nombreImagen As String = txtNombreImagen.Text
+        Dim activo As Integer = 1
+        Dim codeError As Integer
+        Dim msgeError As String = ""
+
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("MODIFICAR_PRODUCTO", Conex) With {
+                .CommandType = CommandType.StoredProcedure
+            }
+
+        cmd.Parameters.Add(":id", idProducto)
+        cmd.Parameters.Add(":descripcion", descripcion)
+        cmd.Parameters.Add(":nombre", nombre)
+        cmd.Parameters.Add(":tipoProducto", tipoProducto)
+        cmd.Parameters.Add(":tipoMaterial", tipoMaterial)
+        cmd.Parameters.Add(":dimension", dimension)
+        cmd.Parameters.Add(":color", color)
+        cmd.Parameters.Add(":peso", peso)
+        cmd.Parameters.Add(":imagen", imagen)
+        cmd.Parameters.Add(":nomImagen", nombreImagen)
+        cmd.Parameters.Add(":activo", activo)
+        cmd.Parameters.Add(":codeError", codeError)
+        cmd.Parameters.Add(":msgeError", msgeError)
         cmd.ExecuteNonQuery()
 
-        Dim transaction As OracleTransaction
-
-        transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd.Transaction = transaction
-        transaction.Commit()
-
+        Console.WriteLine("Codigo de error: ", codeError)
+        Console.WriteLine("Descripcion de error: ", msgeError)
         Conexion.Conex.Close()
-
         Limpiar()
 
         Response.Write("<script language=""javascript"">alert('Producto Actualizado.');</script>")

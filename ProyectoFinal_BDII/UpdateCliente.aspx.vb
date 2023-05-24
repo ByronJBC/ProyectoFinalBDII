@@ -1,6 +1,4 @@
-﻿Imports System.Reflection.Emit
-Imports Oracle.ManagedDataAccess.Client
-Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
+﻿Imports OracleDataReader = Oracle.ManagedDataAccess.Client.OracleDataReader
 
 Public Class UpdateCliente
     Inherits System.Web.UI.Page
@@ -71,42 +69,61 @@ Public Class UpdateCliente
         txtNotas.Text = ""
     End Sub
 
-
-
-    Public Sub txtChanged(ByVal sender As Object, ByVal e As EventArgs)
-        nitClt = (CType(sender, TextBox)).Text
-        nitClt = nitClt.ToUpper()
-        'txtNit2.Text = nitClt
-    End Sub
-
-    Protected Sub TextBox1_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
-        'Label1.Text = "hola"
-    End Sub
-
-
     Protected Sub BtnActualizarCliente_Click(sender As Object, e As EventArgs)
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("UPDATE MUE_CLIENTE 
-        SET CLI_NUMERO_DOCUMENTACION=" & txtNumDocumentacion.Text & ",
-        CLI_NIT=" & txtNit.Text & ",CLI_PRIMER_NOMBRE='" & txtPrimerNombre.Text & "',
-        CLI_SEGUNDO_NOMBRE='" & txtSegundoNombre.Text & "',CLI_PRIMER_APELLIDO='" & txtPrimerApellido.Text & "',
-        CLI_SEGUNDO_APELLIDO='" & txtSegundoApellido.Text & "',CLI_CORREO='" & txtEmail.Text & "',
-        CLI_PASSWORD='" & txtPassword.Text & "',CLI_TIPO_DOCUMENTACION='" & txtTipoDocu.Text & "',
-        CLI_NUMERO_RESIDENCIAL=" & txtNumResidencial.Text & ",CLI_NUMERO_CELULAR=" & txtNumCelular.Text & ",
-        CLI_PAIS='" & txtPais.Text & "',CLI_DEPARTAMENTO='" & txtDepartamento.Text & "',
-        CLI_CIUDAD_RESIDENCIA='" & txtCiudad.Text & "',CLI_DIRECCION='" & txtDireccion.Text & "',
-        CLI_FECHA='" & txtFecha.Text & "',PRS_PROFESION=" & txtProfesion.Text & ",
-        CLI_NOTAS='" & txtNotas.Text & "' WHERE CLI_CLIENTE =" & txtIdCliente.Text & "", Conex)
+        Dim idCliente As Integer = txtIdCliente.Text
+        Dim numDocumentacion As String = txtNumDocumentacion.Text
+        Dim nit As Integer = txtNit.Text
+        Dim primerNombre As String = txtPrimerNombre.Text
+        Dim segundoNombre As String = txtSegundoNombre.Text
+        Dim primerApellido As String = txtPrimerApellido.Text
+        Dim segundoApellido As String = txtSegundoApellido.Text
+        Dim correo As String = txtEmail.Text
+        Dim password As String = txtPassword.Text
+        Dim tipoDocumentacion As String = txtTipoDocu.Text
+        Dim numResidencial As Integer = txtNumResidencial.Text
+        Dim numCelulcar As Integer = txtNumCelular.Text
+        Dim pais As String = txtPais.Text
+        Dim departamento As String = txtDepartamento.Text
+        Dim ciudadResidencia As String = txtCiudad.Text
+        Dim direccion As String = txtDireccion.Text
+        Dim fecha As String = txtFecha.Text
+        Dim profesion As Integer = txtProfesion.Text
+        Dim notas As String = txtNotas.Text
+        Dim activo As Integer = 1
+        Dim codeError As Integer
+        Dim msgeError As String = ""
 
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("MODIFICAR_CLIENTE", Conex) With {
+                .CommandType = CommandType.StoredProcedure
+            }
+
+        cmd.Parameters.Add(":id", idCliente)
+        cmd.Parameters.Add(":numDoc", numDocumentacion)
+        cmd.Parameters.Add(":nit", nit)
+        cmd.Parameters.Add(":primerNom", primerNombre)
+        cmd.Parameters.Add(":segundoNom", segundoNombre)
+        cmd.Parameters.Add(":primerApe", primerApellido)
+        cmd.Parameters.Add(":segundoApe", segundoApellido)
+        cmd.Parameters.Add(":correo", correo)
+        cmd.Parameters.Add(":password", password)
+        cmd.Parameters.Add(":tipoDocu", tipoDocumentacion)
+        cmd.Parameters.Add(":numResidencial", numResidencial)
+        cmd.Parameters.Add(":numCelular", numCelulcar)
+        cmd.Parameters.Add(":pais", pais)
+        cmd.Parameters.Add(":depto", departamento)
+        cmd.Parameters.Add(":ciudadRes", ciudadResidencia)
+        cmd.Parameters.Add(":direccion", direccion)
+        cmd.Parameters.Add(":fecha", fecha)
+        cmd.Parameters.Add(":profesion", profesion)
+        cmd.Parameters.Add(":notas", notas)
+        cmd.Parameters.Add(":activo", activo)
+        cmd.Parameters.Add(":codeError", codeError)
+        cmd.Parameters.Add(":msgeError", msgeError)
         cmd.ExecuteNonQuery()
 
-        Dim transaction As OracleTransaction
-
-        transaction = Conex.BeginTransaction(IsolationLevel.ReadCommitted)
-        cmd.Transaction = transaction
-        transaction.Commit()
-
+        Console.WriteLine("Codigo de error: ", codeError)
+        Console.WriteLine("Descripcion de error: ", msgeError)
         Conexion.Conex.Close()
-
         Limpiar()
 
         Response.Write("<script language=""javascript"">alert('Cliente Actualizado.');</script>")

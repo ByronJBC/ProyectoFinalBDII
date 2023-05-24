@@ -9,7 +9,7 @@ Public Class Productos
     End Sub
 
     Public Sub Llenar_Productos()
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_PRODUCTO", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MOSTRAR_PRODUCTOS", Conex)
 
         Dim lct As OracleDataReader = cmd.ExecuteReader()
 
@@ -21,7 +21,7 @@ Public Class Productos
             New System.Data.DataColumn("Color"),
             New System.Data.DataColumn("Peso")})
         While (lct.Read())
-            dt.Rows.Add(lct(0), lct(2), lct(1), lct(6), lct(7))
+            dt.Rows.Add(lct(0), lct(1), lct(2), lct(3), lct(4))
         End While
 
 
@@ -32,30 +32,35 @@ Public Class Productos
         lct.Close()
 
     End Sub
-
-    Protected Sub GridViewProductos_RowCommandEdit(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
+    Protected Sub GridViewProductos_RowCommand(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
         If e.CommandName = "EditarProducto" Then
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As String = GridViewProductos.DataKeys(indice).Value
 
             Response.Redirect("UpdateProducto.aspx?id=" + id)
 
-        End If
-    End Sub
-
-    Protected Sub GridViewProductos_RowCommandDelete(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewCommandEventArgs)
-        If e.CommandName = "EliminarProducto" Then
-
+        ElseIf e.CommandName = "EliminarProducto" Then
             Dim indice As Integer = Convert.ToInt32(e.CommandArgument)
             Dim id As Integer = GridViewProductos.DataKeys(indice).Value
+            Dim codeError As Integer
+            Dim msgeError As String = ""
 
-            Dim cmd3 As New Oracle.ManagedDataAccess.Client.OracleCommand("DELETE FROM MUE_PRODUCTO WHERE PRO_PRODUCTO = :id", Conex)
-            cmd3.Parameters.Add(":id", id)
-            cmd3.ExecuteNonQuery()
+            Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("ELIMINAR_PRODUCTO", Conex) With {
+                .CommandType = CommandType.StoredProcedure
+            }
+
+            cmd.Parameters.Add(":id", id)
+            cmd.Parameters.Add(":codeError", codeError)
+            cmd.Parameters.Add(":msgeError", msgeError)
+            cmd.ExecuteNonQuery()
+
+            Console.WriteLine("Codigo de error: ", codeError)
+            Console.WriteLine("Descripcion de error: ", msgeError)
 
             Response.Write("<script language=""javascript"">alert('Producto Eliminado.');</script>")
-
             Response.Redirect("~/Productos.aspx")
+        Else
+            Response.Write("<script language=""javascript"">alert('Opción Inválida.');</script>")
         End If
     End Sub
 

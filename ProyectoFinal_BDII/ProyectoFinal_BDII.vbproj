@@ -99,6 +99,7 @@
     <Content Include="AddCliente.aspx" />
     <Content Include="AddEmpleado.aspx" />
     <Content Include="AddProducto.aspx" />
+    <Content Include="assets\img\portfolio\1.jpg" />
     <Content Include="Clientes.aspx" />
     <Content Include="Css\stylesAdmin.css" />
     <Content Include="Css\styles.css" />
@@ -126,6 +127,17 @@
     <Content Include="Home.aspx" />
     <Content Include="HomeAdmin.aspx" />
     <Content Include="HomeForm.aspx" />
+    <Content Include="Img\producto0.jpg" />
+    <Content Include="Img\producto1.jpg" />
+    <Content Include="Img\producto10.jpg" />
+    <Content Include="Img\producto2.jpg" />
+    <Content Include="Img\producto3.jpg" />
+    <Content Include="Img\producto4.jpg" />
+    <Content Include="Img\producto5.jpg" />
+    <Content Include="Img\producto6.jpg" />
+    <Content Include="Img\producto7.jpg" />
+    <Content Include="Img\producto8.jpg" />
+    <Content Include="Img\producto9.jpg" />
     <Content Include="Js\scripts.js" />
     <Content Include="LoginCliente.aspx" />
     <Content Include="LoginEmpleado.aspx" />
