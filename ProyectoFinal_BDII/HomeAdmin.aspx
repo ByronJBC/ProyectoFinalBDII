@@ -87,7 +87,7 @@
                             <img class="img-fluid" src="Img/producto9.jpg" alt="..." />
                         </a>
                         <div class="inventario-caption">
-                            <div class="inventario-caption-heading">Estanteria de madena</div>
+                            <div class="inventario-caption-heading">Estanteria de madera</div>
                             <div class="inventario-caption-subheading text-muted">Fabricada con materiales de alta calidad.</div>
                         </div>
                     </div>
@@ -346,23 +346,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <h2 class="text-uppercase">Mesita de noche</h2>
+                                <p class="item-intro text-muted">Mesa de madera, tamaño pequeño.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto2.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Explore
+                                        <strong>Peso:</strong>
+                                        10 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Graphic Design
+                                        <strong>Color:</strong>
+                                        Blanco 
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>
@@ -383,23 +384,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <h2 class="text-uppercase">Estanteria de madera</h2>
+                                <p class="item-intro text-muted">Fabricada con materiales de alta calidad.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto9.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Finish
+                                        <strong>Peso:</strong>
+                                        25 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Identity
+                                        <strong>Color:</strong>
+                                        Café claro 
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>
@@ -420,23 +422,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <h2 class="text-uppercase">Silla para interior</h2>
+                                <p class="item-intro text-muted">Silla confortable de color negro.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto7.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Lines
+                                        <strong>Peso:</strong>
+                                        15 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Branding
+                                        <strong>Color:</strong>
+                                        Café oscuro 
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>
@@ -457,23 +460,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <h2 class="text-uppercase">Mesa plegable</h2>
+                                <p class="item-intro text-muted">Mesa de madera plegable de tamaño pequeño.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto8.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Southwest
+                                        <strong>Peso:</strong>
+                                        10 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Website Design
+                                        <strong>Color:</strong>
+                                        Café 
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>
@@ -494,23 +498,24 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <h2 class="text-uppercase">Estantería alta</h2>
+                                <p class="item-intro text-muted">stantería de madera, alta y angosta.</p>
+                                <img class="img-fluid d-block mx-auto" src="Img/producto4.jpg" alt="..." />
+
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Window
+                                        <strong>Peso:</strong>
+                                        20 kg
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
-                                        Photography
+                                        <strong>Color:</strong>
+                                        Café claro 
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
-                                    Close Project
+                                    Cerrar Producto
                                 </button>
                             </div>
                         </div>

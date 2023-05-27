@@ -11,7 +11,7 @@ Public Class LoginEmpleado
     End Sub
 
     Protected Sub btnLogin_Click(sender As Object, e As EventArgs)
-        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_EMPLEADOS WHERE EMP_CORREO = :usuario AND EMP_PASSWORD = :password", Conex)
+        Dim cmd As New Oracle.ManagedDataAccess.Client.OracleCommand("SELECT * FROM MUE_EMPLEADO WHERE EMP_CORREO = :usuario AND EMP_PASSWORD = :password", Conex)
 
         cmd.Parameters.Add(":usuario", txt_UserName.Text)
         cmd.Parameters.Add(":password", txt_Password.Text)
